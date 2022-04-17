@@ -1,0 +1,2 @@
+sayhello
+-DCATKIN_DEVEL_PREFIX=/home/linita/linita/test/devel -DCMAKE_INSTALL_PREFIX=/home/linita/linita/test/install -G Unix Makefiles

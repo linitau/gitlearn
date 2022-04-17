@@ -1,0 +1,8 @@
+prefix=/home/linita/linita/test/install
+
+Name: sayhello
+Description: Description of sayhello
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
