@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
     std_msgs::String msg;
     stringstream ss;
     ros::Rate rate(10);//以10hz的频率发布消息
+    ros::Duration(2).sleep();//防止数据在创建过程中数据过早发布导致丢失
     int count=0;
     while(ros::ok())
     {
