@@ -687,6 +687,188 @@ demo02/fast:
 	$(MAKE) -f pub_sub/CMakeFiles/demo02.dir/build.make pub_sub/CMakeFiles/demo02.dir/build
 .PHONY : demo02/fast
 
+#=============================================================================
+# Target rules for targets named ser_client_geneus
+
+# Build rule for target.
+ser_client_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client_geneus
+.PHONY : ser_client_geneus
+
+# fast build rule for target.
+ser_client_geneus/fast:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_geneus.dir/build.make ser_client/CMakeFiles/ser_client_geneus.dir/build
+.PHONY : ser_client_geneus/fast
+
+#=============================================================================
+# Target rules for targets named ser_client_generate_messages_cpp
+
+# Build rule for target.
+ser_client_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client_generate_messages_cpp
+.PHONY : ser_client_generate_messages_cpp
+
+# fast build rule for target.
+ser_client_generate_messages_cpp/fast:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/build
+.PHONY : ser_client_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named _ser_client_generate_messages_check_deps_AddInt
+
+# Build rule for target.
+_ser_client_generate_messages_check_deps_AddInt: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _ser_client_generate_messages_check_deps_AddInt
+.PHONY : _ser_client_generate_messages_check_deps_AddInt
+
+# fast build rule for target.
+_ser_client_generate_messages_check_deps_AddInt/fast:
+	$(MAKE) -f ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/build.make ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/build
+.PHONY : _ser_client_generate_messages_check_deps_AddInt/fast
+
+#=============================================================================
+# Target rules for targets named ser_client_generate_messages_eus
+
+# Build rule for target.
+ser_client_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client_generate_messages_eus
+.PHONY : ser_client_generate_messages_eus
+
+# fast build rule for target.
+ser_client_generate_messages_eus/fast:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/build
+.PHONY : ser_client_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named ser_client_generate_messages_lisp
+
+# Build rule for target.
+ser_client_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client_generate_messages_lisp
+.PHONY : ser_client_generate_messages_lisp
+
+# fast build rule for target.
+ser_client_generate_messages_lisp/fast:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/build
+.PHONY : ser_client_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named ser_client_gennodejs
+
+# Build rule for target.
+ser_client_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client_gennodejs
+.PHONY : ser_client_gennodejs
+
+# fast build rule for target.
+ser_client_gennodejs/fast:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_gennodejs.dir/build.make ser_client/CMakeFiles/ser_client_gennodejs.dir/build
+.PHONY : ser_client_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named demo01_ser
+
+# Build rule for target.
+demo01_ser: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo01_ser
+.PHONY : demo01_ser
+
+# fast build rule for target.
+demo01_ser/fast:
+	$(MAKE) -f ser_client/CMakeFiles/demo01_ser.dir/build.make ser_client/CMakeFiles/demo01_ser.dir/build
+.PHONY : demo01_ser/fast
+
+#=============================================================================
+# Target rules for targets named ser_client_genlisp
+
+# Build rule for target.
+ser_client_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client_genlisp
+.PHONY : ser_client_genlisp
+
+# fast build rule for target.
+ser_client_genlisp/fast:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_genlisp.dir/build.make ser_client/CMakeFiles/ser_client_genlisp.dir/build
+.PHONY : ser_client_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named ser_client_gencpp
+
+# Build rule for target.
+ser_client_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client_gencpp
+.PHONY : ser_client_gencpp
+
+# fast build rule for target.
+ser_client_gencpp/fast:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_gencpp.dir/build.make ser_client/CMakeFiles/ser_client_gencpp.dir/build
+.PHONY : ser_client_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named ser_client_generate_messages
+
+# Build rule for target.
+ser_client_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client_generate_messages
+.PHONY : ser_client_generate_messages
+
+# fast build rule for target.
+ser_client_generate_messages/fast:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages.dir/build
+.PHONY : ser_client_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named ser_client_generate_messages_nodejs
+
+# Build rule for target.
+ser_client_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client_generate_messages_nodejs
+.PHONY : ser_client_generate_messages_nodejs
+
+# fast build rule for target.
+ser_client_generate_messages_nodejs/fast:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/build
+.PHONY : ser_client_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named ser_client_generate_messages_py
+
+# Build rule for target.
+ser_client_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client_generate_messages_py
+.PHONY : ser_client_generate_messages_py
+
+# fast build rule for target.
+ser_client_generate_messages_py/fast:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_py.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_py.dir/build
+.PHONY : ser_client_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named ser_client_genpy
+
+# Build rule for target.
+ser_client_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client_genpy
+.PHONY : ser_client_genpy
+
+# fast build rule for target.
+ser_client_genpy/fast:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_genpy.dir/build.make ser_client/CMakeFiles/ser_client_genpy.dir/build
+.PHONY : ser_client_genpy/fast
+
+#=============================================================================
+# Target rules for targets named demo02_client
+
+# Build rule for target.
+demo02_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo02_client
+.PHONY : demo02_client
+
+# fast build rule for target.
+demo02_client/fast:
+	$(MAKE) -f ser_client/CMakeFiles/demo02_client.dir/build.make ser_client/CMakeFiles/demo02_client.dir/build
+.PHONY : demo02_client/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -740,6 +922,20 @@ help:
 	@echo "... demo03_pub"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... demo02"
+	@echo "... ser_client_geneus"
+	@echo "... ser_client_generate_messages_cpp"
+	@echo "... _ser_client_generate_messages_check_deps_AddInt"
+	@echo "... ser_client_generate_messages_eus"
+	@echo "... ser_client_generate_messages_lisp"
+	@echo "... ser_client_gennodejs"
+	@echo "... demo01_ser"
+	@echo "... ser_client_genlisp"
+	@echo "... ser_client_gencpp"
+	@echo "... ser_client_generate_messages"
+	@echo "... ser_client_generate_messages_nodejs"
+	@echo "... ser_client_generate_messages_py"
+	@echo "... ser_client_genpy"
+	@echo "... demo02_client"
 .PHONY : help
 
 

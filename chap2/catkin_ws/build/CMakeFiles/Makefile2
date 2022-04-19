@@ -264,7 +264,7 @@ gtest/googlemock/preinstall: gtest/googlemock/gtest/preinstall
 gtest/googlemock/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=12,13,14,15 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=16,17,18,19 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -296,7 +296,7 @@ clean: gtest/googlemock/CMakeFiles/gmock_main.dir/clean
 gtest/googlemock/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=9,10,11 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=13,14,15 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -347,7 +347,7 @@ gtest/googlemock/gtest/preinstall:
 gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=18,19 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=22,23 "Built target gtest_main"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -379,7 +379,7 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=16,17 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=20,21 "Built target gtest"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -496,7 +496,7 @@ pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/all: pub_sub/CMakeFiles/
 pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/all: pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/depend
 	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=24 "Built target pub_sub_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=28 "Built target pub_sub_generate_messages_nodejs"
 .PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -761,7 +761,7 @@ clean: pub_sub/CMakeFiles/pub_sub_generate_messages.dir/clean
 pub_sub/CMakeFiles/demo04_sub.dir/all: pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/all
 	$(MAKE) -f pub_sub/CMakeFiles/demo04_sub.dir/build.make pub_sub/CMakeFiles/demo04_sub.dir/depend
 	$(MAKE) -f pub_sub/CMakeFiles/demo04_sub.dir/build.make pub_sub/CMakeFiles/demo04_sub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=7,8 "Built target demo04_sub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=11,12 "Built target demo04_sub"
 .PHONY : pub_sub/CMakeFiles/demo04_sub.dir/all
 
 # Include target in all.
@@ -863,7 +863,7 @@ pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/all: pub_sub/CMakeFiles/std
 pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/all: pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/depend
 	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=21,22 "Built target pub_sub_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=25,26 "Built target pub_sub_generate_messages_eus"
 .PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -960,7 +960,7 @@ pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/all: pub_sub/CMakeFiles/std
 pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/all: pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/depend
 	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=20 "Built target pub_sub_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=24 "Built target pub_sub_generate_messages_cpp"
 .PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1153,7 +1153,7 @@ pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/all: pub_sub/CMakeFiles/st
 pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/all: pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/depend
 	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=23 "Built target pub_sub_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=27 "Built target pub_sub_generate_messages_lisp"
 .PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1282,7 +1282,7 @@ pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/all: pub_sub/CMakeFiles/std_
 pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/all: pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/depend
 	$(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=25,26 "Built target pub_sub_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=29,30 "Built target pub_sub_generate_messages_py"
 .PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1383,7 +1383,7 @@ clean: pub_sub/CMakeFiles/demo01.dir/clean
 pub_sub/CMakeFiles/demo03_pub.dir/all: pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/all
 	$(MAKE) -f pub_sub/CMakeFiles/demo03_pub.dir/build.make pub_sub/CMakeFiles/demo03_pub.dir/depend
 	$(MAKE) -f pub_sub/CMakeFiles/demo03_pub.dir/build.make pub_sub/CMakeFiles/demo03_pub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=5,6 "Built target demo03_pub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=9,10 "Built target demo03_pub"
 .PHONY : pub_sub/CMakeFiles/demo03_pub.dir/all
 
 # Include target in all.
@@ -1452,7 +1452,7 @@ clean: pub_sub/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 pub_sub/CMakeFiles/demo02.dir/all:
 	$(MAKE) -f pub_sub/CMakeFiles/demo02.dir/build.make pub_sub/CMakeFiles/demo02.dir/depend
 	$(MAKE) -f pub_sub/CMakeFiles/demo02.dir/build.make pub_sub/CMakeFiles/demo02.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=3,4 "Built target demo02"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=5,6 "Built target demo02"
 .PHONY : pub_sub/CMakeFiles/demo02.dir/all
 
 # Include target in all.
@@ -1479,6 +1479,511 @@ pub_sub/CMakeFiles/demo02.dir/clean:
 
 # clean rule for target.
 clean: pub_sub/CMakeFiles/demo02.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory ser_client
+
+# Convenience name for "all" pass in the directory.
+ser_client/all: ser_client/CMakeFiles/demo01_ser.dir/all
+ser_client/all: ser_client/CMakeFiles/ser_client_generate_messages.dir/all
+ser_client/all: ser_client/CMakeFiles/demo02_client.dir/all
+
+.PHONY : ser_client/all
+
+# Convenience name for "clean" pass in the directory.
+ser_client/clean: ser_client/CMakeFiles/ser_client_geneus.dir/clean
+ser_client/clean: ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/clean
+ser_client/clean: ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/clean
+ser_client/clean: ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/clean
+ser_client/clean: ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/clean
+ser_client/clean: ser_client/CMakeFiles/ser_client_gennodejs.dir/clean
+ser_client/clean: ser_client/CMakeFiles/demo01_ser.dir/clean
+ser_client/clean: ser_client/CMakeFiles/ser_client_genlisp.dir/clean
+ser_client/clean: ser_client/CMakeFiles/ser_client_gencpp.dir/clean
+ser_client/clean: ser_client/CMakeFiles/ser_client_generate_messages.dir/clean
+ser_client/clean: ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/clean
+ser_client/clean: ser_client/CMakeFiles/ser_client_generate_messages_py.dir/clean
+ser_client/clean: ser_client/CMakeFiles/ser_client_genpy.dir/clean
+ser_client/clean: ser_client/CMakeFiles/demo02_client.dir/clean
+
+.PHONY : ser_client/clean
+
+# Convenience name for "preinstall" pass in the directory.
+ser_client/preinstall:
+
+.PHONY : ser_client/preinstall
+
+#=============================================================================
+# Target rules for target ser_client/CMakeFiles/ser_client_geneus.dir
+
+# All Build rule for target.
+ser_client/CMakeFiles/ser_client_geneus.dir/all: ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/all
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_geneus.dir/build.make ser_client/CMakeFiles/ser_client_geneus.dir/depend
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_geneus.dir/build.make ser_client/CMakeFiles/ser_client_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num= "Built target ser_client_geneus"
+.PHONY : ser_client/CMakeFiles/ser_client_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+ser_client/CMakeFiles/ser_client_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client/CMakeFiles/ser_client_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 0
+.PHONY : ser_client/CMakeFiles/ser_client_geneus.dir/rule
+
+# Convenience name for target.
+ser_client_geneus: ser_client/CMakeFiles/ser_client_geneus.dir/rule
+
+.PHONY : ser_client_geneus
+
+# clean rule for target.
+ser_client/CMakeFiles/ser_client_geneus.dir/clean:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_geneus.dir/build.make ser_client/CMakeFiles/ser_client_geneus.dir/clean
+.PHONY : ser_client/CMakeFiles/ser_client_geneus.dir/clean
+
+# clean rule for target.
+clean: ser_client/CMakeFiles/ser_client_geneus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir
+
+# All Build rule for target.
+ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/all: pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/all: ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/all
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/depend
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=31 "Built target ser_client_generate_messages_cpp"
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 0
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+ser_client_generate_messages_cpp: ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/rule
+
+.PHONY : ser_client_generate_messages_cpp
+
+# clean rule for target.
+ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/clean:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/clean
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir
+
+# All Build rule for target.
+ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/all:
+	$(MAKE) -f ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/build.make ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/depend
+	$(MAKE) -f ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/build.make ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num= "Built target _ser_client_generate_messages_check_deps_AddInt"
+.PHONY : ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/all
+
+# Build rule for subdir invocation for target.
+ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 0
+.PHONY : ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/rule
+
+# Convenience name for target.
+_ser_client_generate_messages_check_deps_AddInt: ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/rule
+
+.PHONY : _ser_client_generate_messages_check_deps_AddInt
+
+# clean rule for target.
+ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/clean:
+	$(MAKE) -f ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/build.make ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/clean
+.PHONY : ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/clean
+
+# clean rule for target.
+clean: ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ser_client/CMakeFiles/ser_client_generate_messages_eus.dir
+
+# All Build rule for target.
+ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/all: pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/all: ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/all
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/depend
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=32,33 "Built target ser_client_generate_messages_eus"
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 0
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+ser_client_generate_messages_eus: ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/rule
+
+.PHONY : ser_client_generate_messages_eus
+
+# clean rule for target.
+ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/clean:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/clean
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir
+
+# All Build rule for target.
+ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/all: pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/all: ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/all
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/depend
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=34 "Built target ser_client_generate_messages_lisp"
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 0
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+ser_client_generate_messages_lisp: ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/rule
+
+.PHONY : ser_client_generate_messages_lisp
+
+# clean rule for target.
+ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/clean:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/clean
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ser_client/CMakeFiles/ser_client_gennodejs.dir
+
+# All Build rule for target.
+ser_client/CMakeFiles/ser_client_gennodejs.dir/all: ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/all
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_gennodejs.dir/build.make ser_client/CMakeFiles/ser_client_gennodejs.dir/depend
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_gennodejs.dir/build.make ser_client/CMakeFiles/ser_client_gennodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num= "Built target ser_client_gennodejs"
+.PHONY : ser_client/CMakeFiles/ser_client_gennodejs.dir/all
+
+# Build rule for subdir invocation for target.
+ser_client/CMakeFiles/ser_client_gennodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client/CMakeFiles/ser_client_gennodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 0
+.PHONY : ser_client/CMakeFiles/ser_client_gennodejs.dir/rule
+
+# Convenience name for target.
+ser_client_gennodejs: ser_client/CMakeFiles/ser_client_gennodejs.dir/rule
+
+.PHONY : ser_client_gennodejs
+
+# clean rule for target.
+ser_client/CMakeFiles/ser_client_gennodejs.dir/clean:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_gennodejs.dir/build.make ser_client/CMakeFiles/ser_client_gennodejs.dir/clean
+.PHONY : ser_client/CMakeFiles/ser_client_gennodejs.dir/clean
+
+# clean rule for target.
+clean: ser_client/CMakeFiles/ser_client_gennodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ser_client/CMakeFiles/demo01_ser.dir
+
+# All Build rule for target.
+ser_client/CMakeFiles/demo01_ser.dir/all: ser_client/CMakeFiles/ser_client_gencpp.dir/all
+	$(MAKE) -f ser_client/CMakeFiles/demo01_ser.dir/build.make ser_client/CMakeFiles/demo01_ser.dir/depend
+	$(MAKE) -f ser_client/CMakeFiles/demo01_ser.dir/build.make ser_client/CMakeFiles/demo01_ser.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=3,4 "Built target demo01_ser"
+.PHONY : ser_client/CMakeFiles/demo01_ser.dir/all
+
+# Include target in all.
+all: ser_client/CMakeFiles/demo01_ser.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ser_client/CMakeFiles/demo01_ser.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client/CMakeFiles/demo01_ser.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 0
+.PHONY : ser_client/CMakeFiles/demo01_ser.dir/rule
+
+# Convenience name for target.
+demo01_ser: ser_client/CMakeFiles/demo01_ser.dir/rule
+
+.PHONY : demo01_ser
+
+# clean rule for target.
+ser_client/CMakeFiles/demo01_ser.dir/clean:
+	$(MAKE) -f ser_client/CMakeFiles/demo01_ser.dir/build.make ser_client/CMakeFiles/demo01_ser.dir/clean
+.PHONY : ser_client/CMakeFiles/demo01_ser.dir/clean
+
+# clean rule for target.
+clean: ser_client/CMakeFiles/demo01_ser.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ser_client/CMakeFiles/ser_client_genlisp.dir
+
+# All Build rule for target.
+ser_client/CMakeFiles/ser_client_genlisp.dir/all: ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/all
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_genlisp.dir/build.make ser_client/CMakeFiles/ser_client_genlisp.dir/depend
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_genlisp.dir/build.make ser_client/CMakeFiles/ser_client_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num= "Built target ser_client_genlisp"
+.PHONY : ser_client/CMakeFiles/ser_client_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+ser_client/CMakeFiles/ser_client_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client/CMakeFiles/ser_client_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 0
+.PHONY : ser_client/CMakeFiles/ser_client_genlisp.dir/rule
+
+# Convenience name for target.
+ser_client_genlisp: ser_client/CMakeFiles/ser_client_genlisp.dir/rule
+
+.PHONY : ser_client_genlisp
+
+# clean rule for target.
+ser_client/CMakeFiles/ser_client_genlisp.dir/clean:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_genlisp.dir/build.make ser_client/CMakeFiles/ser_client_genlisp.dir/clean
+.PHONY : ser_client/CMakeFiles/ser_client_genlisp.dir/clean
+
+# clean rule for target.
+clean: ser_client/CMakeFiles/ser_client_genlisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ser_client/CMakeFiles/ser_client_gencpp.dir
+
+# All Build rule for target.
+ser_client/CMakeFiles/ser_client_gencpp.dir/all: ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/all
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_gencpp.dir/build.make ser_client/CMakeFiles/ser_client_gencpp.dir/depend
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_gencpp.dir/build.make ser_client/CMakeFiles/ser_client_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num= "Built target ser_client_gencpp"
+.PHONY : ser_client/CMakeFiles/ser_client_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+ser_client/CMakeFiles/ser_client_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client/CMakeFiles/ser_client_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 0
+.PHONY : ser_client/CMakeFiles/ser_client_gencpp.dir/rule
+
+# Convenience name for target.
+ser_client_gencpp: ser_client/CMakeFiles/ser_client_gencpp.dir/rule
+
+.PHONY : ser_client_gencpp
+
+# clean rule for target.
+ser_client/CMakeFiles/ser_client_gencpp.dir/clean:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_gencpp.dir/build.make ser_client/CMakeFiles/ser_client_gencpp.dir/clean
+.PHONY : ser_client/CMakeFiles/ser_client_gencpp.dir/clean
+
+# clean rule for target.
+clean: ser_client/CMakeFiles/ser_client_gencpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ser_client/CMakeFiles/ser_client_generate_messages.dir
+
+# All Build rule for target.
+ser_client/CMakeFiles/ser_client_generate_messages.dir/all: ser_client/CMakeFiles/ser_client_generate_messages_cpp.dir/all
+ser_client/CMakeFiles/ser_client_generate_messages.dir/all: ser_client/CMakeFiles/ser_client_generate_messages_eus.dir/all
+ser_client/CMakeFiles/ser_client_generate_messages.dir/all: ser_client/CMakeFiles/ser_client_generate_messages_lisp.dir/all
+ser_client/CMakeFiles/ser_client_generate_messages.dir/all: ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/all
+ser_client/CMakeFiles/ser_client_generate_messages.dir/all: ser_client/CMakeFiles/ser_client_generate_messages_py.dir/all
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages.dir/depend
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num= "Built target ser_client_generate_messages"
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages.dir/all
+
+# Include target in all.
+all: ser_client/CMakeFiles/ser_client_generate_messages.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ser_client/CMakeFiles/ser_client_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client/CMakeFiles/ser_client_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 0
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages.dir/rule
+
+# Convenience name for target.
+ser_client_generate_messages: ser_client/CMakeFiles/ser_client_generate_messages.dir/rule
+
+.PHONY : ser_client_generate_messages
+
+# clean rule for target.
+ser_client/CMakeFiles/ser_client_generate_messages.dir/clean:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages.dir/clean
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages.dir/clean
+
+# clean rule for target.
+clean: ser_client/CMakeFiles/ser_client_generate_messages.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir
+
+# All Build rule for target.
+ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/all: pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/all: ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/all
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/depend
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=35 "Built target ser_client_generate_messages_nodejs"
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 0
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+ser_client_generate_messages_nodejs: ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/rule
+
+.PHONY : ser_client_generate_messages_nodejs
+
+# clean rule for target.
+ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/clean
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: ser_client/CMakeFiles/ser_client_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ser_client/CMakeFiles/ser_client_generate_messages_py.dir
+
+# All Build rule for target.
+ser_client/CMakeFiles/ser_client_generate_messages_py.dir/all: pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/all
+ser_client/CMakeFiles/ser_client_generate_messages_py.dir/all: ser_client/CMakeFiles/_ser_client_generate_messages_check_deps_AddInt.dir/all
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_py.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_py.dir/depend
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_py.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=36,37 "Built target ser_client_generate_messages_py"
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+ser_client/CMakeFiles/ser_client_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client/CMakeFiles/ser_client_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 0
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages_py.dir/rule
+
+# Convenience name for target.
+ser_client_generate_messages_py: ser_client/CMakeFiles/ser_client_generate_messages_py.dir/rule
+
+.PHONY : ser_client_generate_messages_py
+
+# clean rule for target.
+ser_client/CMakeFiles/ser_client_generate_messages_py.dir/clean:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_generate_messages_py.dir/build.make ser_client/CMakeFiles/ser_client_generate_messages_py.dir/clean
+.PHONY : ser_client/CMakeFiles/ser_client_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: ser_client/CMakeFiles/ser_client_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ser_client/CMakeFiles/ser_client_genpy.dir
+
+# All Build rule for target.
+ser_client/CMakeFiles/ser_client_genpy.dir/all: ser_client/CMakeFiles/ser_client_generate_messages_py.dir/all
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_genpy.dir/build.make ser_client/CMakeFiles/ser_client_genpy.dir/depend
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_genpy.dir/build.make ser_client/CMakeFiles/ser_client_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num= "Built target ser_client_genpy"
+.PHONY : ser_client/CMakeFiles/ser_client_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+ser_client/CMakeFiles/ser_client_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client/CMakeFiles/ser_client_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 0
+.PHONY : ser_client/CMakeFiles/ser_client_genpy.dir/rule
+
+# Convenience name for target.
+ser_client_genpy: ser_client/CMakeFiles/ser_client_genpy.dir/rule
+
+.PHONY : ser_client_genpy
+
+# clean rule for target.
+ser_client/CMakeFiles/ser_client_genpy.dir/clean:
+	$(MAKE) -f ser_client/CMakeFiles/ser_client_genpy.dir/build.make ser_client/CMakeFiles/ser_client_genpy.dir/clean
+.PHONY : ser_client/CMakeFiles/ser_client_genpy.dir/clean
+
+# clean rule for target.
+clean: ser_client/CMakeFiles/ser_client_genpy.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ser_client/CMakeFiles/demo02_client.dir
+
+# All Build rule for target.
+ser_client/CMakeFiles/demo02_client.dir/all: ser_client/CMakeFiles/ser_client_gencpp.dir/all
+	$(MAKE) -f ser_client/CMakeFiles/demo02_client.dir/build.make ser_client/CMakeFiles/demo02_client.dir/depend
+	$(MAKE) -f ser_client/CMakeFiles/demo02_client.dir/build.make ser_client/CMakeFiles/demo02_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/linita/linita/chap2/catkin_ws/build/CMakeFiles --progress-num=7,8 "Built target demo02_client"
+.PHONY : ser_client/CMakeFiles/demo02_client.dir/all
+
+# Include target in all.
+all: ser_client/CMakeFiles/demo02_client.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ser_client/CMakeFiles/demo02_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 ser_client/CMakeFiles/demo02_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/linita/linita/chap2/catkin_ws/build/CMakeFiles 0
+.PHONY : ser_client/CMakeFiles/demo02_client.dir/rule
+
+# Convenience name for target.
+demo02_client: ser_client/CMakeFiles/demo02_client.dir/rule
+
+.PHONY : demo02_client
+
+# clean rule for target.
+ser_client/CMakeFiles/demo02_client.dir/clean:
+	$(MAKE) -f ser_client/CMakeFiles/demo02_client.dir/build.make ser_client/CMakeFiles/demo02_client.dir/clean
+.PHONY : ser_client/CMakeFiles/demo02_client.dir/clean
+
+# clean rule for target.
+clean: ser_client/CMakeFiles/demo02_client.dir/clean
 
 .PHONY : clean
 
