@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/linita/linita/chap2/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/linita/linita/chap2/catkin_ws/build/param_server/cmake_install.cmake")
   include("/home/linita/linita/chap2/catkin_ws/build/pub_sub/cmake_install.cmake")
   include("/home/linita/linita/chap2/catkin_ws/build/ser_client/cmake_install.cmake")
 

@@ -68,17 +68,37 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target install
 install: preinstall
@@ -92,27 +112,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -124,16 +123,17 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,184 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+pub_sub/CMakeFiles/pub_sub_geneus.dir/rule:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_geneus.dir/rule
+.PHONY : pub_sub/CMakeFiles/pub_sub_geneus.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+pub_sub_geneus: pub_sub/CMakeFiles/pub_sub_geneus.dir/rule
 
-.PHONY : std_msgs_generate_messages_py
+.PHONY : pub_sub_geneus
 
 # fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/rule
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-pub_sub_generate_messages_nodejs: pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/rule
-
-.PHONY : pub_sub_generate_messages_nodejs
-
-# fast build rule for target.
-pub_sub_generate_messages_nodejs/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/build
-.PHONY : pub_sub_generate_messages_nodejs/fast
-
-# Convenience name for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_generate_messages.dir/rule
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages.dir/rule
-
-# Convenience name for target.
-pub_sub_generate_messages: pub_sub/CMakeFiles/pub_sub_generate_messages.dir/rule
-
-.PHONY : pub_sub_generate_messages
-
-# fast build rule for target.
-pub_sub_generate_messages/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages.dir/build
-.PHONY : pub_sub_generate_messages/fast
-
-# Convenience name for target.
-pub_sub/CMakeFiles/demo04_sub.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/demo04_sub.dir/rule
-.PHONY : pub_sub/CMakeFiles/demo04_sub.dir/rule
-
-# Convenience name for target.
-demo04_sub: pub_sub/CMakeFiles/demo04_sub.dir/rule
-
-.PHONY : demo04_sub
-
-# fast build rule for target.
-demo04_sub/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/demo04_sub.dir/build.make pub_sub/CMakeFiles/demo04_sub.dir/build
-.PHONY : demo04_sub/fast
-
-# Convenience name for target.
-pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make pub_sub/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
+pub_sub_geneus/fast:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/pub_sub_geneus.dir/build.make pub_sub/CMakeFiles/pub_sub_geneus.dir/build
+.PHONY : pub_sub_geneus/fast
 
 # Convenience name for target.
 pub_sub/CMakeFiles/pub_sub_generate_messages_eus.dir/rule:
@@ -363,34 +198,49 @@ pub_sub_generate_messages_eus/fast:
 .PHONY : pub_sub_generate_messages_eus/fast
 
 # Convenience name for target.
-pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+pub_sub/CMakeFiles/pub_sub_gencpp.dir/rule:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_gencpp.dir/rule
+.PHONY : pub_sub/CMakeFiles/pub_sub_gencpp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+pub_sub_gencpp: pub_sub/CMakeFiles/pub_sub_gencpp.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_cpp
+.PHONY : pub_sub_gencpp
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make pub_sub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+pub_sub_gencpp/fast:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/pub_sub_gencpp.dir/build.make pub_sub/CMakeFiles/pub_sub_gencpp.dir/build
+.PHONY : pub_sub_gencpp/fast
 
 # Convenience name for target.
-pub_sub/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : pub_sub/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+pub_sub/CMakeFiles/pub_sub_gennodejs.dir/rule:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_gennodejs.dir/rule
+.PHONY : pub_sub/CMakeFiles/pub_sub_gennodejs.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_lisp: pub_sub/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+pub_sub_gennodejs: pub_sub/CMakeFiles/pub_sub_gennodejs.dir/rule
 
-.PHONY : roscpp_generate_messages_lisp
+.PHONY : pub_sub_gennodejs
 
 # fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make pub_sub/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
+pub_sub_gennodejs/fast:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/pub_sub_gennodejs.dir/build.make pub_sub/CMakeFiles/pub_sub_gennodejs.dir/build
+.PHONY : pub_sub_gennodejs/fast
+
+# Convenience name for target.
+pub_sub/CMakeFiles/demo02.dir/rule:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/demo02.dir/rule
+.PHONY : pub_sub/CMakeFiles/demo02.dir/rule
+
+# Convenience name for target.
+demo02: pub_sub/CMakeFiles/demo02.dir/rule
+
+.PHONY : demo02
+
+# fast build rule for target.
+demo02/fast:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/demo02.dir/build.make pub_sub/CMakeFiles/demo02.dir/build
+.PHONY : demo02/fast
 
 # Convenience name for target.
 pub_sub/CMakeFiles/pub_sub_generate_messages_cpp.dir/rule:
@@ -408,64 +258,19 @@ pub_sub_generate_messages_cpp/fast:
 .PHONY : pub_sub_generate_messages_cpp/fast
 
 # Convenience name for target.
-pub_sub/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-.PHONY : pub_sub/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+pub_sub/CMakeFiles/pub_sub_generate_messages.dir/rule:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_generate_messages.dir/rule
+.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_nodejs: pub_sub/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+pub_sub_generate_messages: pub_sub/CMakeFiles/pub_sub_generate_messages.dir/rule
 
-.PHONY : roscpp_generate_messages_nodejs
+.PHONY : pub_sub_generate_messages
 
 # fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make pub_sub/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
-
-# Convenience name for target.
-pub_sub/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-.PHONY : pub_sub/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: pub_sub/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/roscpp_generate_messages_eus.dir/build.make pub_sub/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-# Convenience name for target.
-pub_sub/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : pub_sub/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: pub_sub/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/roscpp_generate_messages_py.dir/build.make pub_sub/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-pub_sub/CMakeFiles/pub_sub_gencpp.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_gencpp.dir/rule
-.PHONY : pub_sub/CMakeFiles/pub_sub_gencpp.dir/rule
-
-# Convenience name for target.
-pub_sub_gencpp: pub_sub/CMakeFiles/pub_sub_gencpp.dir/rule
-
-.PHONY : pub_sub_gencpp
-
-# fast build rule for target.
-pub_sub_gencpp/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/pub_sub_gencpp.dir/build.make pub_sub/CMakeFiles/pub_sub_gencpp.dir/build
-.PHONY : pub_sub_gencpp/fast
+pub_sub_generate_messages/fast:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages.dir/build
+.PHONY : pub_sub_generate_messages/fast
 
 # Convenience name for target.
 pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Person.dir/rule:
@@ -481,6 +286,21 @@ _pub_sub_generate_messages_check_deps_Person: pub_sub/CMakeFiles/_pub_sub_genera
 _pub_sub_generate_messages_check_deps_Person/fast:
 	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Person.dir/build.make pub_sub/CMakeFiles/_pub_sub_generate_messages_check_deps_Person.dir/build
 .PHONY : _pub_sub_generate_messages_check_deps_Person/fast
+
+# Convenience name for target.
+pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/rule:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/rule
+.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/rule
+
+# Convenience name for target.
+pub_sub_generate_messages_py: pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/rule
+
+.PHONY : pub_sub_generate_messages_py
+
+# fast build rule for target.
+pub_sub_generate_messages_py/fast:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/build
+.PHONY : pub_sub_generate_messages_py/fast
 
 # Convenience name for target.
 pub_sub/CMakeFiles/pub_sub_generate_messages_lisp.dir/rule:
@@ -513,49 +333,34 @@ pub_sub_genlisp/fast:
 .PHONY : pub_sub_genlisp/fast
 
 # Convenience name for target.
-pub_sub/CMakeFiles/pub_sub_gennodejs.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_gennodejs.dir/rule
-.PHONY : pub_sub/CMakeFiles/pub_sub_gennodejs.dir/rule
+pub_sub/CMakeFiles/demo04_sub.dir/rule:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/demo04_sub.dir/rule
+.PHONY : pub_sub/CMakeFiles/demo04_sub.dir/rule
 
 # Convenience name for target.
-pub_sub_gennodejs: pub_sub/CMakeFiles/pub_sub_gennodejs.dir/rule
+demo04_sub: pub_sub/CMakeFiles/demo04_sub.dir/rule
 
-.PHONY : pub_sub_gennodejs
+.PHONY : demo04_sub
 
 # fast build rule for target.
-pub_sub_gennodejs/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/pub_sub_gennodejs.dir/build.make pub_sub/CMakeFiles/pub_sub_gennodejs.dir/build
-.PHONY : pub_sub_gennodejs/fast
+demo04_sub/fast:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/demo04_sub.dir/build.make pub_sub/CMakeFiles/demo04_sub.dir/build
+.PHONY : demo04_sub/fast
 
 # Convenience name for target.
-pub_sub/CMakeFiles/pub_sub_geneus.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_geneus.dir/rule
-.PHONY : pub_sub/CMakeFiles/pub_sub_geneus.dir/rule
+pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/rule:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/rule
+.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-pub_sub_geneus: pub_sub/CMakeFiles/pub_sub_geneus.dir/rule
+pub_sub_generate_messages_nodejs: pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/rule
 
-.PHONY : pub_sub_geneus
+.PHONY : pub_sub_generate_messages_nodejs
 
 # fast build rule for target.
-pub_sub_geneus/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/pub_sub_geneus.dir/build.make pub_sub/CMakeFiles/pub_sub_geneus.dir/build
-.PHONY : pub_sub_geneus/fast
-
-# Convenience name for target.
-pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/rule
-.PHONY : pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/rule
-
-# Convenience name for target.
-pub_sub_generate_messages_py: pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/rule
-
-.PHONY : pub_sub_generate_messages_py
-
-# fast build rule for target.
-pub_sub_generate_messages_py/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_py.dir/build
-.PHONY : pub_sub_generate_messages_py/fast
+pub_sub_generate_messages_nodejs/fast:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/build.make pub_sub/CMakeFiles/pub_sub_generate_messages_nodejs.dir/build
+.PHONY : pub_sub_generate_messages_nodejs/fast
 
 # Convenience name for target.
 pub_sub/CMakeFiles/pub_sub_genpy.dir/rule:
@@ -573,21 +378,6 @@ pub_sub_genpy/fast:
 .PHONY : pub_sub_genpy/fast
 
 # Convenience name for target.
-pub_sub/CMakeFiles/demo01.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/demo01.dir/rule
-.PHONY : pub_sub/CMakeFiles/demo01.dir/rule
-
-# Convenience name for target.
-demo01: pub_sub/CMakeFiles/demo01.dir/rule
-
-.PHONY : demo01
-
-# fast build rule for target.
-demo01/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/demo01.dir/build.make pub_sub/CMakeFiles/demo01.dir/build
-.PHONY : demo01/fast
-
-# Convenience name for target.
 pub_sub/CMakeFiles/demo03_pub.dir/rule:
 	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/demo03_pub.dir/rule
 .PHONY : pub_sub/CMakeFiles/demo03_pub.dir/rule
@@ -603,34 +393,19 @@ demo03_pub/fast:
 .PHONY : demo03_pub/fast
 
 # Convenience name for target.
-pub_sub/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : pub_sub/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+pub_sub/CMakeFiles/demo01.dir/rule:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/demo01.dir/rule
+.PHONY : pub_sub/CMakeFiles/demo01.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: pub_sub/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+demo01: pub_sub/CMakeFiles/demo01.dir/rule
 
-.PHONY : roscpp_generate_messages_cpp
+.PHONY : demo01
 
 # fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make pub_sub/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-# Convenience name for target.
-pub_sub/CMakeFiles/demo02.dir/rule:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pub_sub/CMakeFiles/demo02.dir/rule
-.PHONY : pub_sub/CMakeFiles/demo02.dir/rule
-
-# Convenience name for target.
-demo02: pub_sub/CMakeFiles/demo02.dir/rule
-
-.PHONY : demo02
-
-# fast build rule for target.
-demo02/fast:
-	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/demo02.dir/build.make pub_sub/CMakeFiles/demo02.dir/build
-.PHONY : demo02/fast
+demo01/fast:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f pub_sub/CMakeFiles/demo01.dir/build.make pub_sub/CMakeFiles/demo01.dir/build
+.PHONY : demo01/fast
 
 src/demo01.o: src/demo01.cpp.o
 
@@ -747,43 +522,28 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... install/local"
-	@echo "... pub_sub_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... pub_sub_generate_messages"
-	@echo "... install"
-	@echo "... demo04_sub"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... rebuild_cache"
+	@echo "... pub_sub_geneus"
 	@echo "... pub_sub_generate_messages_eus"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... pub_sub_generate_messages_cpp"
-	@echo "... edit_cache"
-	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_eus"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... pub_sub_gencpp"
 	@echo "... list_install_components"
-	@echo "... _pub_sub_generate_messages_check_deps_Person"
+	@echo "... pub_sub_gencpp"
+	@echo "... pub_sub_gennodejs"
+	@echo "... demo02"
+	@echo "... edit_cache"
+	@echo "... pub_sub_generate_messages_cpp"
+	@echo "... install"
+	@echo "... pub_sub_generate_messages"
 	@echo "... test"
+	@echo "... _pub_sub_generate_messages_check_deps_Person"
+	@echo "... pub_sub_generate_messages_py"
 	@echo "... pub_sub_generate_messages_lisp"
 	@echo "... pub_sub_genlisp"
-	@echo "... pub_sub_gennodejs"
-	@echo "... pub_sub_geneus"
-	@echo "... pub_sub_generate_messages_py"
+	@echo "... demo04_sub"
+	@echo "... pub_sub_generate_messages_nodejs"
 	@echo "... pub_sub_genpy"
-	@echo "... demo01"
+	@echo "... install/local"
 	@echo "... demo03_pub"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... demo02"
-	@echo "... rebuild_cache"
+	@echo "... demo01"
 	@echo "... src/demo01.o"
 	@echo "... src/demo01.i"
 	@echo "... src/demo01.s"

@@ -1,2 +1,2 @@
-pub_sub:ser_client
+param_server:pub_sub:ser_client
 -DCATKIN_DEVEL_PREFIX=/home/linita/linita/chap2/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/linita/linita/chap2/catkin_ws/install -G Unix Makefiles
