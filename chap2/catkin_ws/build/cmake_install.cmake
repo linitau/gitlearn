@@ -134,6 +134,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/linita/linita/chap2/catkin_ws/build/param_server/cmake_install.cmake")
   include("/home/linita/linita/chap2/catkin_ws/build/pub_sub/cmake_install.cmake")
   include("/home/linita/linita/chap2/catkin_ws/build/ser_client/cmake_install.cmake")
+  include("/home/linita/linita/chap2/catkin_ws/build/turtleControl/cmake_install.cmake")
 
 endif()
 

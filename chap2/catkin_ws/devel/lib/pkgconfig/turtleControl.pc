@@ -1,0 +1,8 @@
+prefix=/home/linita/linita/chap2/catkin_ws/devel
+
+Name: turtleControl
+Description: Description of turtleControl
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

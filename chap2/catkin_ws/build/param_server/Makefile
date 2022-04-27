@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+param_server/CMakeFiles/demo03_param_delete.dir/rule:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 param_server/CMakeFiles/demo03_param_delete.dir/rule
+.PHONY : param_server/CMakeFiles/demo03_param_delete.dir/rule
+
+# Convenience name for target.
+demo03_param_delete: param_server/CMakeFiles/demo03_param_delete.dir/rule
+
+.PHONY : demo03_param_delete
+
+# fast build rule for target.
+demo03_param_delete/fast:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f param_server/CMakeFiles/demo03_param_delete.dir/build.make param_server/CMakeFiles/demo03_param_delete.dir/build
+.PHONY : demo03_param_delete/fast
+
+# Convenience name for target.
 param_server/CMakeFiles/roscpp_generate_messages_py.dir/rule:
 	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 param_server/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : param_server/CMakeFiles/roscpp_generate_messages_py.dir/rule
@@ -181,6 +196,21 @@ roscpp_generate_messages_py: param_server/CMakeFiles/roscpp_generate_messages_py
 roscpp_generate_messages_py/fast:
 	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f param_server/CMakeFiles/roscpp_generate_messages_py.dir/build.make param_server/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
+
+# Convenience name for target.
+param_server/CMakeFiles/demo02_param_get.dir/rule:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 param_server/CMakeFiles/demo02_param_get.dir/rule
+.PHONY : param_server/CMakeFiles/demo02_param_get.dir/rule
+
+# Convenience name for target.
+demo02_param_get: param_server/CMakeFiles/demo02_param_get.dir/rule
+
+.PHONY : demo02_param_get
+
+# fast build rule for target.
+demo02_param_get/fast:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f param_server/CMakeFiles/demo02_param_get.dir/build.make param_server/CMakeFiles/demo02_param_get.dir/build
+.PHONY : demo02_param_get/fast
 
 # Convenience name for target.
 param_server/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
@@ -434,6 +464,60 @@ src/demo01_param_set.cpp.s:
 	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f param_server/CMakeFiles/demo01_param_set.dir/build.make param_server/CMakeFiles/demo01_param_set.dir/src/demo01_param_set.cpp.s
 .PHONY : src/demo01_param_set.cpp.s
 
+src/demo02_param_get.o: src/demo02_param_get.cpp.o
+
+.PHONY : src/demo02_param_get.o
+
+# target to build an object file
+src/demo02_param_get.cpp.o:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f param_server/CMakeFiles/demo02_param_get.dir/build.make param_server/CMakeFiles/demo02_param_get.dir/src/demo02_param_get.cpp.o
+.PHONY : src/demo02_param_get.cpp.o
+
+src/demo02_param_get.i: src/demo02_param_get.cpp.i
+
+.PHONY : src/demo02_param_get.i
+
+# target to preprocess a source file
+src/demo02_param_get.cpp.i:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f param_server/CMakeFiles/demo02_param_get.dir/build.make param_server/CMakeFiles/demo02_param_get.dir/src/demo02_param_get.cpp.i
+.PHONY : src/demo02_param_get.cpp.i
+
+src/demo02_param_get.s: src/demo02_param_get.cpp.s
+
+.PHONY : src/demo02_param_get.s
+
+# target to generate assembly for a file
+src/demo02_param_get.cpp.s:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f param_server/CMakeFiles/demo02_param_get.dir/build.make param_server/CMakeFiles/demo02_param_get.dir/src/demo02_param_get.cpp.s
+.PHONY : src/demo02_param_get.cpp.s
+
+src/demo03_param_delete.o: src/demo03_param_delete.cpp.o
+
+.PHONY : src/demo03_param_delete.o
+
+# target to build an object file
+src/demo03_param_delete.cpp.o:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f param_server/CMakeFiles/demo03_param_delete.dir/build.make param_server/CMakeFiles/demo03_param_delete.dir/src/demo03_param_delete.cpp.o
+.PHONY : src/demo03_param_delete.cpp.o
+
+src/demo03_param_delete.i: src/demo03_param_delete.cpp.i
+
+.PHONY : src/demo03_param_delete.i
+
+# target to preprocess a source file
+src/demo03_param_delete.cpp.i:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f param_server/CMakeFiles/demo03_param_delete.dir/build.make param_server/CMakeFiles/demo03_param_delete.dir/src/demo03_param_delete.cpp.i
+.PHONY : src/demo03_param_delete.cpp.i
+
+src/demo03_param_delete.s: src/demo03_param_delete.cpp.s
+
+.PHONY : src/demo03_param_delete.s
+
+# target to generate assembly for a file
+src/demo03_param_delete.cpp.s:
+	cd /home/linita/linita/chap2/catkin_ws/build && $(MAKE) -f param_server/CMakeFiles/demo03_param_delete.dir/build.make param_server/CMakeFiles/demo03_param_delete.dir/src/demo03_param_delete.cpp.s
+.PHONY : src/demo03_param_delete.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -444,8 +528,10 @@ help:
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... demo03_param_delete"
 	@echo "... list_install_components"
 	@echo "... roscpp_generate_messages_py"
+	@echo "... demo02_param_get"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... edit_cache"
 	@echo "... roscpp_generate_messages_lisp"
@@ -466,6 +552,12 @@ help:
 	@echo "... src/demo01_param_set.o"
 	@echo "... src/demo01_param_set.i"
 	@echo "... src/demo01_param_set.s"
+	@echo "... src/demo02_param_get.o"
+	@echo "... src/demo02_param_get.i"
+	@echo "... src/demo02_param_get.s"
+	@echo "... src/demo03_param_delete.o"
+	@echo "... src/demo03_param_delete.i"
+	@echo "... src/demo03_param_delete.s"
 .PHONY : help
 
 

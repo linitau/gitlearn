@@ -1,0 +1,13 @@
+radius: 0.42
+radius_param: 32
+rosdistro: 'melodic
+
+  '
+roslaunch:
+  uris: {host_quark__33057: 'http://Quark:33057/'}
+rosversion: '1.14.13
+
+  '
+run_id: 507bfcc2-c5f2-11ec-8488-0800279bbf0c
+type: bicycle
+type_param: car

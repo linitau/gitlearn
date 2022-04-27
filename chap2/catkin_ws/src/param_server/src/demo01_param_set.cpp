@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     ros::NodeHandle nh;
     //参数增
     //case1
-    nh.setParam("type","bicycle");
+    nh.setParam("type","bicycle");//键-值形式
     nh.setParam("radius", 0.15);
     //case2
     ros::param::set("type_param","car");

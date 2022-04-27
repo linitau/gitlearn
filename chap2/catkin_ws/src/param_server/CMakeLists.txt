@@ -136,6 +136,9 @@ include_directories(
 add_executable(demo01_param_set src/demo01_param_set.cpp)
 
 add_executable(demo02_param_get src/demo02_param_get.cpp)
+add_executable(demo03_param_delete src/demo03_param_delete.cpp)
+
+
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -153,7 +156,10 @@ target_link_libraries(demo01_param_set
 )
 target_link_libraries(demo02_param_get
   ${catkin_LIBRARIES}
-
+)
+target_link_libraries(demo03_param_delete
+  ${catkin_LIBRARIES}
+)
 #############
 ## Install ##
 #############
