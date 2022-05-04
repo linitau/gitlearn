@@ -1,0 +1,8 @@
+prefix=/home/linita/linita/chap2/catkin_ws/devel
+
+Name: head_src_test
+Description: Description of head_src_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

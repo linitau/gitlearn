@@ -1,0 +1,4 @@
+<!--reuse the launch file-->
+<launch>
+    <include file="$(find launch_test)/launch/start_turtle.launch" />
+</launch>

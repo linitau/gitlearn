@@ -360,6 +360,30 @@ gtest_hide_internal_symbols:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
+//Dependencies for the target
+head_src_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
+
+//Value Computed by CMake
+head_src_test_BINARY_DIR:STATIC=/home/linita/linita/chap2/catkin_ws/build/head_src_test
+
+//Value Computed by CMake
+head_src_test_SOURCE_DIR:STATIC=/home/linita/linita/chap2/catkin_ws/src/head_src_test
+
+//Value Computed by CMake
+head_test_BINARY_DIR:STATIC=/home/linita/linita/chap2/catkin_ws/build/head_test
+
+//Value Computed by CMake
+head_test_SOURCE_DIR:STATIC=/home/linita/linita/chap2/catkin_ws/src/head_test
+
+//Dependencies for the target
+hello_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
+
+//Value Computed by CMake
+launch_test_BINARY_DIR:STATIC=/home/linita/linita/chap2/catkin_ws/build/launch_test
+
+//Value Computed by CMake
+launch_test_SOURCE_DIR:STATIC=/home/linita/linita/chap2/catkin_ws/src/launch_test
+
 //Path to a library.
 lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
 
@@ -368,6 +392,12 @@ message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
+
+//Value Computed by CMake
+meta_pkg_BINARY_DIR:STATIC=/home/linita/linita/chap2/catkin_ws/build/meta_pkg
+
+//Value Computed by CMake
+meta_pkg_SOURCE_DIR:STATIC=/home/linita/linita/chap2/catkin_ws/src/meta_pkg
 
 //Value Computed by CMake
 param_server_BINARY_DIR:STATIC=/home/linita/linita/chap2/catkin_ws/build/param_server
@@ -380,6 +410,12 @@ pub_sub_BINARY_DIR:STATIC=/home/linita/linita/chap2/catkin_ws/build/pub_sub
 
 //Value Computed by CMake
 pub_sub_SOURCE_DIR:STATIC=/home/linita/linita/chap2/catkin_ws/src/pub_sub
+
+//Value Computed by CMake
+ros_time_BINARY_DIR:STATIC=/home/linita/linita/chap2/catkin_ws/build/ros_time
+
+//Value Computed by CMake
+ros_time_SOURCE_DIR:STATIC=/home/linita/linita/chap2/catkin_ws/src/ros_time
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/melodic/share/rosconsole/cmake
@@ -536,7 +572,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

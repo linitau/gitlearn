@@ -1,0 +1,6 @@
+<launch deprecated="this is discard file">
+    <!--respawn参数，结点关闭后自动重启   deprecated文件弃用声明 required=true结点是否是必须的，是的话退出时关闭整个系统-->
+    <node pkg="turtlesim" type="turtlesim_node" name="my_turtle" output="screen" respawn="false" required="true" />
+    <node pkg="turtlesim" type="turtle_teleop_key" name="my_key" output="screen" />
+
+</launch>
