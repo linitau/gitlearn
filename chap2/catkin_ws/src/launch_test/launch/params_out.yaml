@@ -1,0 +1,15 @@
+bg_B: 255
+bg_G: 20
+bg_R: 50
+my_turtle: {background_b: 255, background_g: 86, background_r: 69, bg_B: 255, bg_G: 20,
+  bg_R: 50, param_B: 100.23}
+param_A: 199
+rosdistro: 'melodic
+
+  '
+roslaunch:
+  uris: {host_quark__33605: 'http://Quark:33605/', host_quark__38509: 'http://Quark:38509/'}
+rosversion: '1.14.13
+
+  '
+run_id: 45436ff0-cf81-11ec-ba7a-0800279bbf0c
